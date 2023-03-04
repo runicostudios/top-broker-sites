@@ -1,5 +1,4 @@
 import "./globals.css";
-import { lato } from "./fonts";
 
 export default function RootLayout({
   children,
@@ -7,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={lato.className}>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
