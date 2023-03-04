@@ -1,5 +1,5 @@
 type LogoProps = {
-  [key: string]: string;
+  [key: string]: string
 }
 
 export function Logo(props: LogoProps) {

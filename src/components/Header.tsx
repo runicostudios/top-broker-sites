@@ -10,7 +10,7 @@ import { NavLink } from '@/components/NavLink'
 
 type MobileNavLinkProps = {
   href: string
-  children: any
+  children: React.ReactNode
 }
 
 function MobileNavLink({ href, children }: MobileNavLinkProps) {

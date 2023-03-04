@@ -1,7 +1,9 @@
 import clsx from 'clsx'
 
 type ContainerProps = {
-  className: string;
+  className?: string
+  props?: { [key: string]: string }
+  children?: React.ReactNode
 }
 
 export function Container({ className, ...props }: ContainerProps) {

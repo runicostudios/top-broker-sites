@@ -2,7 +2,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 interface baseStyles {
-  [key: string]: string;
+  [key: string]: string
 }
 
 const baseStyles: baseStyles = {
@@ -14,8 +14,8 @@ const baseStyles: baseStyles = {
 
 interface variantStyles {
   [key: string]: {
-    [key: string]: string;
-  };
+    [key: string]: string
+  }
 }
 
 const variantStyles: variantStyles = {
@@ -35,10 +35,11 @@ const variantStyles: variantStyles = {
 }
 
 type ButtonProps = {
-  variant: string;
-  color: string;
-  className: string;
-  href: string;
+  variant?: string
+  color: string
+  className?: string
+  href: string
+  children: React.ReactNode
 }
 
 export function Button({
