@@ -4,7 +4,7 @@ import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
 import { Button } from "@/components/Button";
-import { Container } from "@/components/Container";
+import { Container } from "@/src/components/Container";
 import { Logo } from "@/components/Logo";
 import { NavLink } from "@/components/NavLink";
 
