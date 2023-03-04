@@ -20,8 +20,11 @@ function MobileNavLink({ href, children }: MobileNavLinkProps) {
     </Popover.Button>
   )
 }
+type MobileNavIconProps = {
+  open: boolean
+}
 
-function MobileNavIcon({ open }) {
+function MobileNavIcon({ open }: MobileNavIconProps) {
   return (
     <svg
       aria-hidden="true"
