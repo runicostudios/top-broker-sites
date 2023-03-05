@@ -7,6 +7,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { LogoFull } from '@/components/LogoFull'
+import { LogoShort } from '@/components/LogoShort'
 import { NavLink } from '@/components/NavLink'
 
 type MobileNavLinkProps = {
@@ -105,7 +106,8 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <LogoFull className="h-10 w-auto" />
+              <LogoShort className="h-10 w-auto sm:hidden" />
+              <LogoFull className="hidden h-10 w-auto sm:inline" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>

@@ -6,13 +6,14 @@ export function LogoShort(props: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="223.557"
-      height="91.292"
+      // width="223.557"
+      // height="91.292"
       viewBox="0 0 59.15 24.154"
+      {...props}
     >
       <defs>
         <marker
-          id="b"
+          id="d"
           markerHeight="4.155"
           markerWidth="3.594"
           orient="auto-start-reverse"
@@ -31,7 +32,7 @@ export function LogoShort(props: LogoProps) {
           ></path>
         </marker>
         <marker
-          id="a"
+          id="c"
           markerHeight="4.001"
           markerWidth="3.461"
           orient="auto-start-reverse"
