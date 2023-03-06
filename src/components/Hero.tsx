@@ -5,8 +5,8 @@ import { Container } from '@/components/Container'
 
 export function Hero() {
   return (
-    <Container className="mx-auto max-w-7xl pt-20 pb-16 text-center sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-40 lg:px-8 lg:pt-32">
-      <div className="px-6 lg:px-0 lg:pt-4">
+    <Container className="mx-auto max-w-7xl pt-20 pb-16 text-center sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-40 lg:px-8 lg:pt-32 ">
+      <div className="px-6 lg:px-0 lg:pt-4 ">
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
           Find{' '}
           <span className="relative whitespace-nowrap text-blue-600">
@@ -30,14 +30,16 @@ export function Hero() {
           aligns with what matters to you most.
         </p>
       </div>
-      <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
+      <div className="displ mt-20 justify-end sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0">
         <div
           className="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36"
           aria-hidden="true"
         />
-        <div className="shadow-lg md:rounded-3xl">
+        <div className="shadow-lg md:rounded-3xl lg:mr-0 lg:ml-auto lg:max-w-md">
           <div className="bg-slate-50 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
-            <div className="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0"></div>
+            <div className="relative h-80 px-6 pt-8 sm:pt-16">
+              <h2>Broker quiz will go here</h2>
+            </div>
           </div>
         </div>
       </div>

@@ -16,10 +16,6 @@ const navigation = [
   { name: 'Contact Us', href: '#contact', current: false },
 ]
 
-function classNames(...classes: [string: string]) {
-  return classes.filter(Boolean).join(' ')
-}
-
 type MobileNavLinkProps = {
   href: string
   children: React.ReactNode
