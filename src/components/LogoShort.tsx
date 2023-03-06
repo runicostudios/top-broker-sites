@@ -76,7 +76,7 @@ export function LogoShort(props: LogoProps) {
         fill="none"
         stroke="#262626"
         strokeWidth="2.7"
-        markerStart="url(#a)"
+        markerStart="url(#c)"
         d="M31.756 24.256l-.073-17.307"
         transform="translate(-26.342 -6.333)"
       ></path>
@@ -84,7 +84,7 @@ export function LogoShort(props: LogoProps) {
         fill="none"
         stroke="#206eff"
         strokeWidth="2.7"
-        markerEnd="url(#b)"
+        markerEnd="url(#d)"
         d="M42.726 29.868l.098-17.063"
         transform="translate(-26.342 -6.333)"
       ></path>

@@ -10,6 +10,16 @@ import { LogoFull } from '@/components/LogoFull'
 import { LogoShort } from '@/components/LogoShort'
 import { NavLink } from '@/components/NavLink'
 
+const navigation = [
+  { name: 'About', href: '#about', current: false },
+  { name: 'Broker Reviews', href: '#reviews', current: false },
+  { name: 'Contact Us', href: '#contact', current: false },
+]
+
+function classNames(...classes: [string: string]) {
+  return classes.filter(Boolean).join(' ')
+}
+
 type MobileNavLinkProps = {
   href: string
   children: React.ReactNode
@@ -22,6 +32,7 @@ function MobileNavLink({ href, children }: MobileNavLinkProps) {
     </Popover.Button>
   )
 }
+
 type MobileNavIconProps = {
   open: boolean
 }
@@ -106,22 +117,21 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <LogoShort className="h-10 w-auto sm:hidden" />
-              <LogoFull className="hidden h-10 w-auto sm:inline" />
+              <LogoShort className="h-8 w-auto sm:hidden" />
+              <LogoFull className="hidden h-8 w-auto sm:inline" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-            </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
+            <div className="hidden md:flex md:gap-x-6">
+              {navigation.map((item) => (
+                <NavLink key={item.name} href={item.href}>
+                  {item.name}
+                </NavLink>
+              ))}
             </div>
             <Button href="/register" color="blue">
               <span>
-                Get started <span className="hidden lg:inline">today</span>
+                Compare <span className="hidden md:inline">Brokers</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

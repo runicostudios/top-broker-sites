@@ -24,9 +24,9 @@ export function LogoFull(props: LogoProps) {
           viewBox="0 0 5.324 6.155"
         >
           <path
-            fill="#206eff"
+            fill="#2563eb"
             fillRule="evenodd"
-            stroke="#206eff"
+            stroke="#2563eb"
             strokeWidth=".5pt"
             d="M2.885 0L-1.44 2.5v-5z"
           ></path>
@@ -68,7 +68,7 @@ export function LogoFull(props: LogoProps) {
           fontWeight="400"
         >
           <tspan fill="#262626">
-            Top<tspan fill="#175DFF">Broker</tspan>Sites
+            Top<tspan fill="#2563eb">Broker</tspan>Sites
           </tspan>
         </tspan>
       </text>
