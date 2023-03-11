@@ -24,9 +24,10 @@ export function LogoShort(props: LogoProps) {
           viewBox="0 0 5.324 6.155"
         >
           <path
-            fill="#206eff"
+            className="fill-primary-500 stroke-primary-500"
+            // fill="#206eff"
             fillRule="evenodd"
-            stroke="#206eff"
+            // stroke="#206eff"
             strokeWidth=".5pt"
             d="M2.885 0L-1.44 2.5v-5z"
           ></path>
@@ -68,7 +69,7 @@ export function LogoShort(props: LogoProps) {
           fontWeight="400"
         >
           <tspan fill="#262626">
-            T<tspan fill="#206eff">B</tspan>S
+            T<tspan className={'fill-primary-600'}>B</tspan>S
           </tspan>
         </tspan>
       </text>
@@ -81,8 +82,8 @@ export function LogoShort(props: LogoProps) {
         transform="translate(-26.342 -6.333)"
       ></path>
       <path
+        className="stroke-primary-500"
         fill="none"
-        stroke="#206eff"
         strokeWidth="2.7"
         markerEnd="url(#d)"
         d="M42.726 29.868l.098-17.063"
