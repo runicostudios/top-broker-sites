@@ -38,7 +38,7 @@ export function Hero() {
         <div className="shadow-lg md:rounded-3xl lg:mr-0 lg:ml-auto lg:max-w-md">
           <div className="bg-slate-50 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
             <div className="relative h-80 px-6 pt-8 sm:pt-16">
-              <h2>Broker quiz will go here</h2>
+              <h2>Broker quiz will go here.</h2>
             </div>
           </div>
         </div>
